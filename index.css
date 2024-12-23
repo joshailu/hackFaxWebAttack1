@@ -1,0 +1,20 @@
+body {
+    color: darkred;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue", serif;
+  }
+
+
+#logo {
+    background-color: darkred;
+    color:white;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+#logo h1 {
+    margin:0;
+}
