@@ -9,11 +9,20 @@
     <div id="logo">
         <h1>HackFax CTF</h1>
     </div>
-    <h2>Mysterio planted a clue on this page. Can you find it?</h2>
-    <button id="hintBtn">View Hint</button>
-    <p id="hint" style="display:none;">Hint: Inspect everything carefully...</p>
+
     <br>
-    <img src="V2UgZm91bmQgYSB3aW5uZXIhIEhlcmUgaXMgdGhlIHNlY3JldCBjb2RlOiBXZWJBdHRhY2tXaW5uZXI4OTA=.png" style="height:50%; width:50%;">
+
+    <button id="hintBtn" onmouseover="showButton()" onmouseleave="hideButton()">
+        <img id="cloud" src="assets/cloud.png" alt="" style="max-height:50px">
+    </button>
+
+    <div id="images">
+        <img id="mysterio" src="assets/V2UgZm91bmQgYSB3aW5uZXIhIEhlcmUgaXMgdGhlIHNlY3JldCBjb2RlOiBXZWJBdHRhY2tXaW5uZXI4OTA=.png" alt="">
+        <img id="textBubble" src="assets/textBubble.png" alt="">
+        <img id="thoughtBubble" src="assets/thoughtBubble.png" style="display:none;"alt="">
+    </div>
+
+    
     <script src="index.js"></script>
 </body>
 </html>

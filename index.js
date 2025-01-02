@@ -1,13 +1,27 @@
 let hintViewable = 0;
 
+
 document.getElementById("hintBtn").addEventListener("click", () => {
-    const hint = document.getElementById("hint");
+    const thought = document.getElementById("thoughtBubble");
+    const text = document.getElementById("textBubble");
     if (hintViewable === 0) {
-        hint.style.display="flex";
+        thought.style.display="flex";
+        text.style.display="none";
         hintViewable = 1;
     } else {
-        hint.style.display="none";
+        thought.style.display="none";
+        text.style.display="flex";
         hintViewable = 0;
     }
 
 })
+
+function showButton() {
+    document.getElementById("cloud").src = "/assets/cloudText.png";
+}
+
+function hideButton() {
+    if (hintViewable === 0) {
+        document.getElementById("cloud").src = "/assets/cloud.png";
+    }
+}
