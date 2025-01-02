@@ -17,11 +17,11 @@ document.getElementById("hintBtn").addEventListener("click", () => {
 })
 
 function showButton() {
-    document.getElementById("cloud").src = "/assets/cloudText.png";
+    document.getElementById("cloud").src = "assets/cloudText.png";
 }
 
 function hideButton() {
     if (hintViewable === 0) {
-        document.getElementById("cloud").src = "/assets/cloud.png";
+        document.getElementById("cloud").src = "assets/cloud.png";
     }
 }
